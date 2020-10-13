@@ -11,7 +11,7 @@ def can_be_instantiated_and_then_saved
   movie.save
 end
 
-def can_be_created_with_a_hash_of_attribute  # Initialize movie and then and save it
+def can_be_created_with_a_hash_of_attributes  # Initialize movie and then and save it
   attributes = {
       title: "The Sting",
       release_date: 1973,
@@ -66,7 +66,7 @@ def can_find_using_where_clause_and_be_sorted
 end
 
 def can_be_found_updated_and_saved
-  # Updtate the title "Awesome Flick" to "Even Awesomer Flick", save it, then return it
+  # Update the title "Awesome Flick" to "Even Awesomer Flick", save it, then return it
   Movie.create(title: "Awesome Flick")
   movie = Movie.find_by(title: "Awesome Flick")
   movie.update(title: "Even Awesomer Flick")
